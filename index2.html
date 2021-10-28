@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clase 1</title>
+    <script>
+        function mifuncion(){
+            document.getElementById('mitexto').innerHTML="Texto modificado";
+        }
+        function mifuncion2(){
+            document.getElementById('mitexto').innerHTML="Mi Texto";
+        }
+
+        function mifuncion3(){
+            alert("esto es una ventana de alerta");
+        }
+
+    </script>
 </head>
 <body>
     <div>
@@ -18,37 +31,17 @@
         <aside>La sección de uno de los lados</aside>
         <footer>La sección de pie de página (lo que está en la parte inferior)</footer>    
     </div>
-
-    <div>
-        Etiquetas de encabezado/titulo:
-        <h1>Este es el encabezado de mayor jerarquía (el más importante)</h1>
-        <h2>Este es el encabezao de segunda mayor jerarquía</h2>
-        <h3>Este es el encabezao de tercera mayor jerarquía</h3>
-        <h4>Este es el encabezao de cuarta mayor jerarquía</h4>
-        <h5>Este es el encabezao de quinta mayor jerarquía</h5>
-        <h6>Este es el encabezao de sexta mayor jerarquía</h6>
-    </div>
-
-    <div>
-        Etiquetas de texto:
-        <p>Esta etiqueta se utiliza para indiciar que el texto es un simple párrafo. <br>
-           Este es otro párrafo. <br>
-           Este es otro párrafo más.
-        </p>
-        <hr>
-        <p>Este párrafo trata sobre otra cosa (cambio de tema)</p>
-
-        <pre>
-            Esta etiqueta se utiliza para indiciar que el texto es un simple párrafo.
-            Este es otro párrafo. 
-            Este es otro párrafo más.
-            
-            Este párrafo trata sobre otra cosa (cambio de tema)
-        </pre>
-    </div>
-
+    <hr/>
     <img src="https://www.infobae.com/pf/resources/images/logo_infobae_naranja.svg?d=798" 
     alt="Este es un logo" style="width: 300px">
+    <hr/>
+    <p id="mitexto">Mi texto</p>
+
+    <button type="buttom" onclick=mifuncion()> Cambiar font size </button>
+
+    <button type="buttom" onclick=mifuncion2()> Restaurar font size </button>
+
+    <button type="buttom" onclick=mifuncion3()> Alerta </button>
 
 </body>
 </html>
