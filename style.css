@@ -1,0 +1,30 @@
+/* Configuraciones Esenciales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 5;
+    background-color: rgb(198, 226, 235);  
+}
+
+label { 
+    color: rgb(42, 5, 110); 
+    font-size: 20px;
+}
+
+input {
+    color:blue;
+    font-size: 20px;
+}
+
+#submit {
+    color:black;
+    font-size: 20px;
+}
+
+img {
+    border: 3px; 
+    border-style: groove; 
+    border-color: gray;
+}
