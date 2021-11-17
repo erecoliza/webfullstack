@@ -1,28 +1,62 @@
 /* Configuraciones Esenciales */
+
 * {
     box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Petemoss&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Petemoss&family=Roboto:ital,wght@0,300;1,100&display=swap');
-
-body {
-    margin: 0;    
-    font-family: 'Roboto', sans-serif;                
+header * {
+    display: inline-flex;
 }
 
 header {
-    background-color: aqua; 
-    text-align:center;      
-    height: 150px;        
+    background-color: aqua;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: sticky;
 }
 
-header * {
-    display: inline;  
-    padding: 20px;
-    }
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    top: 140;
+    position: relative;
+}
+
+nav {
+    /*background-color: brown;*/
+}
+
+ul {
+    /*background-color: rgb(42, 165, 83);*/
+}
+
+li {
+    /*background-color: bisque;*/
+}
+
+img {
+    height: 100px;
+    margin-right: 50px;
+}
+
+a {
+    /*background-color: blue;*/
+    text-decoration: none;
+    margin-top: 80px;
+    padding-right: 60px;
+}
+
+a:hover {
+    color: black;
+    font-weight: bold;
+}
 
 section {
-    width: 800px;    
+    width: 800px;
     margin: 20px auto;
 }
 
@@ -34,20 +68,3 @@ h1 {
 h2 {
     text-align: center;
 }
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    color: black;            
-    font-weight: bold;
-}
-
-
-
-
-
-
-
-
