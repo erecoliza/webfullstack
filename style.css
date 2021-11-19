@@ -1,95 +1,89 @@
-/* Configuraciones Esenciales */
-
-* {
-    box-sizing: border-box;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Petemoss&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Petemoss&family=Roboto:ital,wght@0,300;1,100&display=swap');
-header * {
-    display: inline-flex;
-}
-
-header {
-    background-color: aqua;
-    text-align: right;
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: sticky;
-}
-
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    top: 140;
-    position: relative;
-}
-
-
-/*
-nav {
-/*background-color: brown;
-}
-ul {
-background-color: aqua;
-}
-li {
-background-color: aqua;
-}
-*/
-
-img {
-    height: 100px;
-    margin-right: 50px;
-}
-
-.whatsapp img {
-    height: 50px;
-}
-
-div {
-    margin-top: 40px;
-}
-
-a {
-    text-decoration: none;
-    margin-top: 10px;
-    padding-right: 60px;
-}
-
-a:hover {
-    color: black;
-    font-weight: bold;
-}
-
-.li-menu2 img {
-    margin-top: 20px;
-    height: 60px;
-}
-
-.li-menu1 img:hover {
-    border-color: black;
-    border-width: 2px;
-    border: 2px solid rgb(216, 210, 210);
-}
-
-.li-menu2 img:hover {
-    border-color: black;
-    border-width: 2px;
-    border: 2px solid rgb(216, 210, 210);
-}
-
-section {
-    width: 1500px;
-    margin: 20px auto;
-}
-
-h1 {
-    font-family: 'Petemoss', cursive;
-    font-size: 50px;
-}
-
-h2 {
-    text-align: center;
-}
+    /* Configuraciones Esenciales */
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Petemoss&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Petemoss&family=Roboto:ital,wght@0,300;1,100&display=swap');
+    header * {
+        display: flex;
+    }
+    
+    header {
+        background-color: aqua;
+        text-align: right;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding-left: 650px;
+        position: sticky;
+    }
+    
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        top: 140;
+        position: relative;
+    }
+    
+    img {
+        height: 100px;
+        margin-right: 50px;
+    }
+    
+    .image-a {
+        object-fit: cover;
+    }
+    
+    .whatsapp img {
+        height: 50px;
+    }
+    
+    .texto-menu {
+        margin-top: 40px;
+    }
+    
+    a {
+        text-decoration: none;
+        margin-top: 10px;
+        padding-right: 60px;
+    }
+    
+    a:hover {
+        color: black;
+        font-weight: bold;
+    }
+    
+    ul {
+        margin-left: 60px;
+    }
+    
+    .li-menu1 img {
+        box-shadow: 3px 3px 10px black;
+    }
+    
+    .li-menu2 img {
+        margin-top: 20px;
+        height: 60px;
+        box-shadow: 3px 3px 10px black;
+    }
+    
+    .li-menu1 img:hover,
+    .li-menu2 img:hover {
+        border: 2px solid rgb(216, 210, 210);
+    }
+    
+    section {
+        width: 1500px;
+        margin: 20px auto;
+    }
+    
+    h1 {
+        font-family: 'Petemoss', cursive;
+        font-size: 50px;
+    }
+    
+    h2 {
+        text-align: center;
+    }
