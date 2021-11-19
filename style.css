@@ -16,7 +16,7 @@
         width: 100%;
         top: 0;
         left: 0;
-        padding-left: 650px;
+        padding-left: 350px;
         position: sticky;
     }
     
@@ -75,7 +75,7 @@
     }
     
     section {
-        width: 1500px;
+        width: 850px;
         margin: 20px auto;
     }
     
