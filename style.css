@@ -15,7 +15,7 @@
         top: 0rem;
         left: 0rem;
         height: 7rem;
-        width: 100%;
+        width: 100%;   
         position: sticky;
     }
  
@@ -81,8 +81,7 @@
     .li-menu2 img:hover {
         border: 2px solid rgb(216, 210, 210);
     }
-     
-            
+         
     h1 {
         font-family: 'Petemoss', cursive;
         font-size: 50px;
