@@ -1,53 +1,62 @@
     /* Configuraciones Esenciales */
     
-    * {
-        box-sizing: border-box;
-    }
-    
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Petemoss&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Petemoss&family=Roboto:ital,wght@0,300;1,100&display=swap');
-    header * {
-        display: flex;
+    
+    body {
+        box-sizing: border-box;
+        top: 0;
+        margin: 0;
     }
     
     header {
         background-color: aqua;
-        text-align: right;
+        display: flex;
+        top: 0rem;
+        left: 0rem;
+        height: 7rem;
         width: 100%;
-        top: 0;
-        left: 0;
-        padding-left: 650px;
         position: sticky;
     }
-    
-    body {
-        margin: 0;
-        font-family: 'Roboto', sans-serif;
-        top: 140;
-        position: relative;
+ 
+    section {
+        width: 80%;
+        margin: 1rem auto;
+        height: auto;
+    }
+ 
+    figure {
+        display: flex;
+        align-items: center;
+
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     
-    img {
-        height: 100px;
-        margin-right: 50px;
+    nav ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
     }
     
+    nav ul li {
+        margin: 0 0.5rem;        
+    }
+                
     .image-a {
         object-fit: cover;
-    }
-    
-    .whatsapp img {
-        height: 50px;
-    }
-    
+    } 
+                   
     .texto-menu {
         margin-top: 40px;
     }
     
     a {
         text-decoration: none;
-        margin-top: 10px;
-        padding-right: 60px;
     }
     
     a:hover {
@@ -55,17 +64,16 @@
         font-weight: bold;
     }
     
-    ul {
-        margin-left: 60px;
-    }
-    
     .li-menu1 img {
+        margin: 1rem;
+        height: auto;
+        width: 9rem;
         box-shadow: 3px 3px 10px black;
     }
     
     .li-menu2 img {
-        margin-top: 20px;
-        height: 60px;
+        height: auto;
+        width: 14rem;
         box-shadow: 3px 3px 10px black;
     }
     
@@ -73,15 +81,12 @@
     .li-menu2 img:hover {
         border: 2px solid rgb(216, 210, 210);
     }
-    
-    section {
-        width: 1500px;
-        margin: 20px auto;
-    }
-    
+     
+            
     h1 {
         font-family: 'Petemoss', cursive;
         font-size: 50px;
+        text-align: center;
     }
     
     h2 {
