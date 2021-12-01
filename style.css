@@ -24,8 +24,12 @@
     }
  
     footer {
-        padding-top: 10rem;
-        height: 30rem;
+        background-color: #139EA5;        
+        height: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
     section {        
         width: 80%;
@@ -65,7 +69,8 @@
         margin: 0 1.5rem;        
     }
            
-    .SUB-MENU {
+    .SUB-MENU,
+    .SUB-MENU2 {
        position: absolute;
         display:flex;
         flex-direction: column;        
@@ -76,15 +81,17 @@
         display: none;   
     }
 
-    .SUB-MENU li {
+    .SUB-MENU li,
+    .SUB-MENU2 li  {
         padding-top: 1rem;        
     }
 
-    .MENU-OPTIONS:hover .SUB-MENU {        
+    .MENU-OPTIONS:hover .SUB-MENU, 
+    .MENU-OPTIONS:hover .SUB-MENU2 {        
         display: flex;
         background-color:  #f9f9f9;
     }
-
+    
     .MENU-OPTIONS:hover a {
         color: black;        
     }
