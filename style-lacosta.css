@@ -1,67 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 
- 
- /* Configuraciones Esenciales */    
+@font-face {
+    font-family: 'GothamRounded';
+    src: url(./fonts/GothamRounded-Light.otf);
+}
+
+/* Configuraciones Esenciales */
 :root {
-    --color-ppal: #009ca1d9;
+    /*--color-ppal: #009ca1d9;*/
+    --color-ppal: rgba(0, 156, 161, 0.80);
     --color-blanco: #ffffff;
-    --color-gray: #dadada;
-} 
+    --color-gray: #dadada;    
+}
 
 body {
     box-sizing: border-box;
     top: 0;
     margin: 0;
+    background-image: url('./assets/PRIMERA-INFANCIA.jpg');
+    background-repeat:no-repeat;
+    height: 500rem;
 }
 
 .div-container {
     margin: 0rem;
-    background-color: var(--color-ppal);    
+    background-color: var(--color-ppal);
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
     justify-content: space-evenly;
+    ç opacity: 0, 30;
 }
 
 .div-logo {
     width: 10rem;
-    margin: 1rem;    
-    margin-left: 2.5rem ;    
-    width: 93px;   
+    margin: 1rem;
+    margin-left: 2.5rem;
+    width: 98px;
 }
 
-.div-logo img {        
+.div-logo img {
     width: inherit;
 }
 
-.div-menu {    
+.div-menu {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     justify-content: center;
-    
+
 }
-.div-menu-ppal {    
-    display:flex;    
+
+.div-menu-ppal {
+    display: flex;
     margin-top: 0.5rem;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-family: 'GothamRounded', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
     color: var(--color-blanco);
-    width: 40rem;    
+    width: 40rem;
     justify-content: end;
     gap: 1rem;
 }
 
-.div-menu-sec {    
-    display:flex;    
+.div-menu-sec {
+    display: flex;
     margin-top: 0.5rem;
     justify-content: end;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
+    font-family: 'GothamRounded', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
     color: var(--color-gray);
     width: 40rem;
-    gap: 1.5rem;     
+    gap: 1.5rem;
 }
 
 .div-menu-sec .items-sec:nth-child(6) {
-    background-color: lawngreen;
-    width: 66px;    
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.div-menu-sec .items-sec:nth-child(5) a,
+.div-menu-sec .items-sec:nth-child(6) a {
+    font-family: 'GothamRounded', sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--color-gray);
+}
+
+.div-menu-sec .items-sec:nth-child(6) img {
+    width: 0.8rem;
 }
