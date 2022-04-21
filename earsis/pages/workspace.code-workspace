@@ -2,6 +2,13 @@
 	"folders": [
 		{
 			"path": "..\\.."
+		},
+		{
+			"name": "Test-JS-II",
+			"path": "..\\..\\la_costa\\Test-JS-II"
 		}
-	]
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "webfullstack"
+	}
 }
