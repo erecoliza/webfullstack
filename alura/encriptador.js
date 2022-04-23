@@ -54,49 +54,8 @@ function funcionEncriptar() {
         salida.value = textoEncriptado;
 
     } else {
-        mensaje.value = "Texto NO válido";
+        swal("Error al Encriptar", "Solo se perminte letras minusculas y sin acento", "error");                
     }
-
-
- /*   
-    if (verificarTexto()) {     
-/* 
-e = "enter"
-i = "imes"
-a = "ai"
-o = "ober"
-u = "ufat"
-
-    var texto = entrada.value
-    var textoEncriptado = "";
-
-    for (i=0;i<texto.length;i++){
-        switch (texto.charAt(i)) {
-            case "a":
-                textoEncriptado += "ai";
-                break;
-            case "e":
-                textoEncriptado += "enter";
-                break;
-            case "i":
-                textoEncriptado += "imes";
-                break;
-            case "o": 
-                textoEncriptado += "ober";            
-                break;
-            case "u":
-                textoEncriptado += "ufat";
-                break;
-            default:
-                textoEncriptado += texto.charAt(i);
-        }        
-    }    
-    salida.value = textoEncriptado;
-    } else {
-        mensaje.value = "Texto NO válido";
-    }
- */
-
 }
 
 function funcionDesencriptar() {
@@ -129,7 +88,7 @@ function funcionDesencriptar() {
         salida.value = textoDesencriptado;
 
     } else {
-        mensaje.value = "Texto NO válido";
+        swal("Error al Desencriptar", "Solo se perminte letras minusculas y sin acento", "error");
     }
 }
 
@@ -155,9 +114,6 @@ desencriptar.onclick = funcionDesencriptar;
 copiar.onclick = funcioncopiar;
 entrada.onfocus = funcionBlanquear;
 
-
-
 entrada.focus();
 entrada.value="";
 entrada.focus();
-

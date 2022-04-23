@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./encriptador.css">
-    
+    <link rel="stylesheet" href="./encriptador.css">        
     <title>encriptador</title>
 </head>
-<body>
-    <textarea id="textoIngresado" rows="4" cols="50"></textarea> <textarea id="textoEncriptado" rows="4" cols="50"></textarea>
-    </br>
-    </br>
-    <button id="encriptar">Encriptar</button>    <button id="desencriptar">DES-Encriptar</button>     <button id="copiar">Copiar</button>
-    </br>
-    </br>
-    <textarea id="mensaje" rows="4" cols="50"></textarea>
-    <script src="./encriptador.js"></script>
+<body>        
+    <div id="frame6">
+        <img id="logo" src="./images/Logo.png" alt="Alura Logo">                   
+    </div>
+    <div id="rectangulo"> </div>     
+
+    <textarea id="textoIngresado" value="Ingrese el texto aqui" ></textarea>  
+    <textarea id="textoEncriptado" ></textarea>
+    
+    <button id="copiar"><p  id="textobotoncopiar">Copiar</p></button>
+    
+    <div id="frame1">
+        <img id="exclamacion" src="./images/Vector.png" alt="exclamacion"><p>Solo letras minusculas y sin acento</p>
+    </div>
+   
+    <div id="frame3">            
+        <button id="encriptar"><p id="textobotonencriptar">Encriptar</p></button>    
+        <button id="desencriptar"><p id="textobotondesencriptar">Desencriptar</p></button>                   
+    </div>                                    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./encriptador.js"></script>        
 </body>
 </html>
