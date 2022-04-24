@@ -229,3 +229,139 @@ p{
     border-radius: 24px;
     background: #FFFFFF;
 }
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 768px) {
+    body {
+        position: relative;
+        width: 768px;
+        height: 1384px;
+    }
+
+    #logo {
+        position: absolute;
+        left: 5.21%;
+        right: 90.74%;
+        top: 5.42%;
+        bottom: 91.16%;
+    }
+
+    #rectangulo {
+        position: absolute;
+        width: 688px;
+        height: 343px;
+        left: 40px;
+        top: 1001px;
+    }
+
+    #textoIngresado {
+        position: absolute;
+        width: 688px;
+        height: 288px;
+        left: 40px;
+        top: 240px;
+    }
+    #frame1 {
+        position: absolute;
+        width: 229px;
+        height: 18px;
+        left: 40px;
+        top: 836px;
+    }
+    #exclamacion {
+        position: absolute;
+        left: 10%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+    }
+    
+    p {
+        position: absolute;
+        width: 205px;
+        height: 18px;
+        left: 20%;
+        top: 0px;
+    }
+
+    #frame3 {                        
+        position: absolute;
+        padding:0px;
+        width: 688px;
+        height: 67px;
+        left: 40px;        
+        top: 870px;      
+        background-color: aquamarine;                                     
+    }
+
+    #textoEncriptado {
+        position: absolute;
+        padding:0px;
+        width: 624px;
+        height: 180px;
+        left: 72px;
+        top: 1033px;
+    }
+
+    #encriptar {
+        position: absolute;      
+        margin:0px;  
+        width: 332px;
+        height: 67px;
+        left: 0px;
+        top: 0px;        
+    }
+
+    #textobotonencriptar {
+        position: absolute;
+        margin:24px;
+        width: 332px;
+        height: 67px;
+        left: 0px;
+        top: 0px;
+    }
+
+    #desencriptar {
+        position: absolute;
+        padding: 0px;
+        width: 332px;
+        height: 67px;
+        left: 356px;
+        top: 0px;
+        margin:0px;
+    }
+ 
+    #textobotondencriptar {
+        position: absolute;
+        pading: 0px;
+        margin:24px;
+        width: 332px;
+        height: 67px;
+        left: 0px;
+        top: 0px;
+    }
+    
+    
+    
+    
+    
+    
+    
+
+    #textobotoncopiar {
+        position: static;
+        width: 576px;
+        height: 19px;
+        left: 24px;
+        top: 24px;
+    }
+
+    #copiar {
+        position: absolute;
+        width: 624px;
+        height: 67px;
+        left: 74px;
+        top: 1244px;
+    }
+
+}
