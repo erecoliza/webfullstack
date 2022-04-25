@@ -11,15 +11,16 @@ body{
 }
 
 #logo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    position: absolute;
+    position: relative;
     width: 120px;
     height: 48px;
-    left: 40px;
-    top: 40px;
+    left: 0px;
+    top: 0px;       
+    /* Inside auto layout */    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;      
 }
 
 #rectangulo {
@@ -107,6 +108,7 @@ p{
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
+    margin: 0px;
     position: absolute;
     width: 680px;
     height: 67px;
@@ -121,6 +123,7 @@ p{
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
+
     position: absolute;
     width: 120px;
     height: 48px;
@@ -163,7 +166,7 @@ p{
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 24px; 
+    margin: 0px 0px; 
 }
 
 #textobotonencriptar {
@@ -230,20 +233,28 @@ p{
     background: #FFFFFF;
 }
 
+/* TABLET  */
 /* Use a media query to add a break point at 800px: */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     body {
         position: relative;
         width: 768px;
-        height: 1384px;
+        height: 1384px; 
+        margin: 0px;
+        padding: 0px;       
+        
+    }        
+                                            
+    #frame6 {
+       left: 0px;                
     }
 
     #logo {
-        position: absolute;
-        left: 5.21%;
-        right: 90.74%;
-        top: 5.42%;
-        bottom: 91.16%;
+        position: relative;
+        left: 0%;
+        right: 0%;
+        top: 6.25%;
+        bottom: 89.8%;          
     }
 
     #rectangulo {
@@ -261,13 +272,15 @@ p{
         left: 40px;
         top: 240px;
     }
+
     #frame1 {
         position: absolute;
         width: 229px;
         height: 18px;
-        left: 40px;
+        left: 20px;
         top: 836px;
     }
+    
     #exclamacion {
         position: absolute;
         left: 10%;
@@ -291,7 +304,7 @@ p{
         height: 67px;
         left: 40px;        
         top: 870px;      
-        background-color: aquamarine;                                     
+                                         
     }
 
     #textoEncriptado {
@@ -314,11 +327,11 @@ p{
 
     #textobotonencriptar {
         position: absolute;
-        margin:24px;
+        margin:0px;
         width: 332px;
         height: 67px;
         left: 0px;
-        top: 0px;
+        top: 24px;
     }
 
     #desencriptar {
@@ -331,29 +344,22 @@ p{
         margin:0px;
     }
  
-    #textobotondencriptar {
+    #textobotondesencriptar {
         position: absolute;
-        pading: 0px;
-        margin:24px;
+        padding: 0px;
+        margin:0px;
         width: 332px;
         height: 67px;
         left: 0px;
-        top: 0px;
-    }
-    
-    
-    
-    
-    
-    
-    
+        top: 24px;
+    }   
 
     #textobotoncopiar {
         position: static;
         width: 576px;
         height: 19px;
         left: 24px;
-        top: 24px;
+        top: 0px;
     }
 
     #copiar {
@@ -362,6 +368,97 @@ p{
         height: 67px;
         left: 74px;
         top: 1244px;
+    }
+
+}
+ 
+/* CELULAR   */
+
+@media screen and (max-width: 400px) {
+    body {
+        position: relative;
+        width: 375px;
+        height: 1715px;
+        margin: 0px;
+        padding: 0px;     
+    }        
+                                            
+    #frame6 {
+       left: -15px;                
+       top: 10px;
+    }
+
+    #logo {
+        position: relative;                
+        top: 1.4%;        
+    }
+
+    #rectangulo {
+        position: absolute;
+        width: 343px;
+        height: 595px;
+        left: 16px;
+        top: 1096px;
+    }
+
+    #textoIngresado {
+        position: absolute;
+        width: 343px;
+        height: 624px;
+        left: 16px;
+        top: 152px;
+    }
+
+    #frame1 {                        
+        left:0px;
+        
+    }
+                                
+    #frame3 {        
+    position: absolute;
+    width: 343px;
+    height: 158px;
+    left: 16px;
+    top: 874px;                                                  
+    }
+
+    #textoEncriptado {
+        position: absolute;
+        padding:0px;
+        width: 279px;
+        height: 432px;
+        left: 48px;
+        top: 1128px;
+    }     
+    
+    #encriptar {
+        width: 343px;
+    }
+    
+    #desencriptar {
+        position: absolute;  
+        margin: 0px;   
+        width: 343px;        
+        left: 0px;
+        top: 91px;                                          
+    }   
+                        
+    #textobotoncopiar {
+        position: static;
+        width: 279px;
+        height: 67px;
+        left: 0px;
+        top: 24px;
+        margin: 0px;
+    }
+
+    #copiar {
+        position: absolute;
+        width: 279px;
+        height: 67px;
+        left: 48px;
+        top: 1592px;
+        padding-left: 0px;
     }
 
 }
