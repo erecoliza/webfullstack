@@ -22,7 +22,7 @@ const user1 = {
     genero: 'Masculino',
     intereses: ['Violin', 'Boxeo'],
 
-    saludo: function() {
+    saludo: function () {
         console.log('Hola, soy ' + this.nombre + '.')
     }
 }
@@ -35,10 +35,10 @@ const user = {
     name: 'Pedro',
     age: 20,
     email: 'pedro@gmail.com',
-    login: function() {
+    login: function () {
         console.log('El usuario se ha logeado');
     },
-    logout: function() {
+    logout: function () {
         console.log('El usuario se ha deslogeado');
     }
 }
@@ -126,7 +126,7 @@ for (let i = 0; i < 5; i++) {
 console.log('Ciclo terminado');
 
 // While
-let i = 0; 
+let i = 0;
 while (i < 5) {
     console.log('Ciclo: ', i);
     i++;
@@ -135,7 +135,7 @@ while (i < 5) {
 console.log('Ciclo terminado');
 
 // Do... while
-let i = 0; 
+let i = 0;
 do {
     console.log('Ciclo: ', i);
     i++;
@@ -157,7 +157,7 @@ let puntajes = [50, 25, 0, 30, 100, 20, 10, 35, 70];
 for (let i = 0; i < puntajes.length; i++) {
 
     if (puntajes[i] === 0) {
-       continue; 
+        continue;
     }
 
     console.log('Tu puntaje es:', puntajes[i]);
@@ -173,7 +173,7 @@ for (let i = 0; i < puntajes.length; i++) {
 const electrodomesticos = [
     { nombre: 'Televisor', precio: 40000, color: 'Gris' },
     { nombre: 'Heladera', precio: 100000, color: 'Blanco' },
-    { nombre: 'PC', precio: 100000, color: 'Negro'},
+    { nombre: 'PC', precio: 100000, color: 'Negro' },
     { nombre: 'Licuadora', precio: 10000, color: 'Rojo' },
     { nombre: 'Aspiradora', precio: 20000, color: 'Amarillo' },
     { nombre: 'Parlante', precio: 50000, color: 'Negro' },
